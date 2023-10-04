@@ -1,10 +1,8 @@
-const socket = require('socket.io')
+const {Server} = require('socket.io')
 
-const io = new socket.Server({
+const io = new Server(3000, {
     cors: 'https://sims-eight.vercel.app/'
 })
-
-io.listen('3001')
 
 const characters = []
 
