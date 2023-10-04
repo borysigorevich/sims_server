@@ -1,7 +1,7 @@
 const socket = require('socket.io')
 
 const io = new socket.Server({
-    cors: 'http://localhost:5173'
+    cors: 'https://sims-eight.vercel.app/'
 })
 
 io.listen('3001')
